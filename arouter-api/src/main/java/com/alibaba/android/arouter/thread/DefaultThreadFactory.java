@@ -1,12 +1,12 @@
 package com.alibaba.android.arouter.thread;
 
-import android.support.annotation.NonNull;
-
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.alibaba.android.arouter.utils.Consts;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import androidx.annotation.NonNull;
 
 /**
  * 线程池工厂类

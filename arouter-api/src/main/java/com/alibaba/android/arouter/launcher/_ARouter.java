@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -34,6 +33,8 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ThreadPoolExecutor;
+
+import androidx.core.app.ActivityCompat;
 
 /**
  * ARouter core (Facade patten)
@@ -403,8 +404,8 @@ final class _ARouter {
                     Object instance = fragmentMeta.getConstructor().newInstance();
                     if (instance instanceof Fragment) {
                         ((Fragment) instance).setArguments(postcard.getExtras());
-                    } else if (instance instanceof android.support.v4.app.Fragment) {
-                        ((android.support.v4.app.Fragment) instance).setArguments(postcard.getExtras());
+                    } else if (instance instanceof androidx.fragment.app.Fragment) {
+                        ((androidx.fragment.app.Fragment) instance).setArguments(postcard.getExtras());
                     }
 
                     return instance;

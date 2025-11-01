@@ -45,13 +45,12 @@ android {
 
 dependencies {
     implementation project(':arouter-api')
+    implementation project(':arouter-annotation')
 
     // 开发中依赖对方的 service 包
     implementation project(':module-java-export')
     implementation project(':module-java')
 
     implementation project(':module-kotlin')
-
-    implementation "com.android.support:support-v4:${SUPPORT_LIB_VERSION}"
-    implementation "com.android.support:appcompat-v7:${SUPPORT_LIB_VERSION}"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
 }
