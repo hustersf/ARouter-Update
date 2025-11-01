@@ -7,6 +7,11 @@ dependencies {
 
 dependencies {
     implementation 'com.android.tools.build:gradle:7.0.1'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'commons-codec:commons-codec:1.10'
+    implementation 'com.google.guava:guava:28.1-jre'
+    implementation 'org.ow2.asm:asm:7.0'
+    implementation 'org.ow2.asm:asm-commons:7.0'
 }
 
 apply from: rootProject.file('gradle/publish.gradle')
